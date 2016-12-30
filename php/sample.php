@@ -24,12 +24,12 @@ class Sign{
   }
   public function getSing(){
     $params = $this->getRequset("get");
-    $jssdk = new JSSDK("your_APPID", "your_APPSecret",$params["url"]);
+    $jssdk = new JSSDK($this->appId,$this->appSecret,$params["url"]);
     $signPackage = $jssdk->GetSignPackage();
     echo json_encode($signPackage);
   }
 }
-$sing = new Sign();
+$sing = new Sign("your_APPID", "your_APPSecret");
 $sing->getSing();
 ?>
 
