@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>测试分享</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="qrcode.min.js"></script> 
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<br>
+				<div class="jumbotron">
+				  <h1>Hello, world!</h1>
+				  <p>分享示例页面<span id="title"></span></p>
+				  
+				</div>
+				<section>
+					<blockquote>
+					  <p>注册分享，即我们可以使用触发jssdk提供的注册事件将我们想要分享的地址及标题以及一张小图片进行注册，注册后的右上角分享按钮将分享我们注册过得指定页面</p>
+					</blockquote>
+					<p class="text-center"><button class="btn btn-primary" id="onMenuShareTimeline">分享到朋友圈</button></p>
+				</section>
+				<hr>
+				<section>
+					<blockquote>
+					  <ol>
+						  <li>带参数注册分享: </li>
+						  <li>使用ajax请求获取用户参数并且注册分享事件</li>
+						  <li>直接获取URL参数</li>
+					  </ol>
+					</blockquote>
+					<p class="text-center">
+						<button class="btn btn-primary" id="share1">分享测试1</button> 
+						<button class="btn btn-primary" id="share2">分享测试2</button>
+					</p>
+				</section>
+				<hr>
+				<section>
+					<blockquote>
+					  <ol>
+						  <li>分享给朋友demo</li>
+						  <li>此处只是换了分享的接口，案例跟前面的两个基本一致</li>
+						  <li>该接口需要多加一个参数来在朋友的消息列表里面显示该条分享的简介</li>
+						  <li>使用ajax请求获取用户参数并且注册分享事件</li>
+						  <li>直接获取URL参数</li>
+					  </ol>
+					</blockquote>
+					<p class="text-center">
+						<button class="btn btn-primary" id="share3">分享测试3</button> 
+						<button class="btn btn-primary" id="share4">分享测试4</button>
+					</p>
+				</section>
+				<hr>
+				<section>
+					<blockquote>
+					  <ol>
+						  <li>非微信内置环境分享</li>
+						  <li>需要先生成二维码再进行保存至手机然后使用微信扫一扫识别跳转。</li>
+						  <li>使用ajax请求获取用户参数并且注册分享事件</li>
+						  <li>直接获取URL参数</li>
+					  </ol>
+					</blockquote>
+					<div id="code" class="text-center"></div>
+					<br> 
+					<p class="text-center">
+						<button class="btn btn-primary" id="qrcode1">生成分享二维码</button>
+					</p>
+				</section>
+			</div>
+		</div>
+	</div>
+	
+</body>
+<script src="index.js"></script>
+</html>
