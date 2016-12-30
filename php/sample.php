@@ -24,7 +24,7 @@ class Sign{
   }
   public function getSing(){
     $params = $this->getRequset("get");
-    $jssdk = new JSSDK("your_APPID", "your_appSecret",$params["url"]);
+    $jssdk = new JSSDK("your_APPID", "your_APPSecret",$params["url"]);
     $signPackage = $jssdk->GetSignPackage();
     echo json_encode($signPackage);
   }

@@ -125,7 +125,7 @@ $(document).ready(function(){
 
 				  title: data.name,
 				  link: data.url,
-				  desc: '欢迎查阅贾学文的分享',
+				  desc: '欢迎查阅Vincent的分享',
 				  type: 'link',
 				  imgUrl: 'http://demo.open.weixin.qq.com/jssdk/images/p2166127561.jpg',
 			      trigger: function (res) {
@@ -151,7 +151,7 @@ $(document).ready(function(){
 				wx.onMenuShareAppMessage({
 				  title: a.name,
 				  link: a.url,
-				  desc: '欢迎查阅贾学文的分享',
+				  desc: '欢迎查阅Vincent的分享',
 				  type: 'link',
 				  imgUrl: 'http://demo.open.weixin.qq.com/jssdk/images/p2166127561.jpg',
 				  trigger: function (res) {
